@@ -22,5 +22,6 @@ namespace Honolulu_Happy_Hour
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-    }
+
+    } 
 }

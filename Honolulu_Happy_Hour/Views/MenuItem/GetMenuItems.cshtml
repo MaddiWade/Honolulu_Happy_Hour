@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MenuItems>
+
+<br />
+<br />
+<br />
+<br />
+
+@foreach(var item in @Model)
+{
+    <h1> @item.RestrauntName : @item.MenuItem (@item.ItemPrice)</h1>
+    
+}

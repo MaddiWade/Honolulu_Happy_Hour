@@ -6,6 +6,19 @@
     <title>@ViewData["Title"] - Honolulu_Happy_Hour</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            min-height: 100vh;
+            height: fit-content;
+            width: 100%;
+            background-image: url('/Images/Beer.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 3rem 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -40,6 +53,7 @@
             &copy; 2022 - Honolulu_Happy_Hour - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

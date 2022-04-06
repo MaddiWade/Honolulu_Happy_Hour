@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model MenuItems
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<style>
+    .test{
+        background-image: url('Images/Beer.jpg');
+    }
+</style>
+
+
+<div class="test">
+    <div class="text-center hero">
+
+        <h1 class="display-4">Honolulu Happy Hour</h1>
+        <p>all your happy hour needs in one spot!</p>
+
+</div class="container text-white-50">
+    @using (Html.BeginForm("GetMenuItems", "MenuItem", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>Search Here: </td>
+                <td>@Html.TextBoxFor(menuitems => menuitems.MenuItem)
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit Form" /></td>
+            </tr>
+        </table>
+    }
 </div>
+ 
+
