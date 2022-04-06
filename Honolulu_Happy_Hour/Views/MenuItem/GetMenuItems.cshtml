@@ -5,8 +5,19 @@
 <br />
 <br />
 
+<style>
+    .test{
+       background-color:  #00a3cc;
+    }
+    .kolor {
+        color: black;
+    }
+
+</style>
+ <div class="kolor test">
 @foreach(var item in @Model)
 {
     <h1> @item.RestrauntName : @item.MenuItem (@item.ItemPrice)</h1>
     
 }
+</div>

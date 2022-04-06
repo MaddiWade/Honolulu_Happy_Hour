@@ -5,16 +5,21 @@
     .test{
         background-image: url('Images/Beer.jpg');
     }
+    .kolor {
+        color: black;
+    }
+
 </style>
 
 
-<div class="test">
+
+<div class="test kolor">
     <div class="text-center hero">
 
         <h1 class="display-4">Honolulu Happy Hour</h1>
         <p>all your happy hour needs in one spot!</p>
 
-</div class="container text-white-50">
+</div class="container text-white-50 kolor">
     @using (Html.BeginForm("GetMenuItems", "MenuItem", FormMethod.Post))
     {
         <table>
