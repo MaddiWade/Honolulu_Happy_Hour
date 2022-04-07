@@ -12,12 +12,28 @@
     .kolor {
         color: black;
     }
+    table {
+  width: 100%;
+}
 
 </style>
  <div class="kolor test">
-@foreach(var item in @Model)
-{
-    <h1> @item.RestrauntName : @item.MenuItem (@item.ItemPrice)</h1>
-    
-}
+
+     <table border = 1>
+         <tr>
+             <th>Restaurant Name</th>
+             <th>Menu Item</th>
+             <th>Price/Discount</th>
+             <th>Time</th>
+         </tr>
+         @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.RestrauntName</td>
+                <td>@u.MenuItem</td>
+                <td>@u.ItemPrice</td>
+                <td>@u.TimeRange</td>
+            </tr>
+        }
+    </table>
 </div>
